@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from '@/routes';
 
 const App = () => {
   return (
-    <div>
-      <h1>我的笔记应用</h1>
-    </div>
-  )
-}
+    <Router>
+      <AppRoutes />
+    </Router>
+  );
+};
 
-export default App
+export default App;
